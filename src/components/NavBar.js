@@ -1,17 +1,15 @@
-import { useEffect, useState } from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import logo from '../assets/img/logo.svg'
-import navIcon1 from '../assets/img/nav-icon1.svg'
-import navIcon2 from '../assets/img/nav-icon2.svg'
-import navIcon3 from '../assets/img/nav-icon3.svg'
+import { useState, useEffect } from "react";
+import {Navbar, Container, Nav} from "react-bootstrap";
+import logo from '../assets/img/logo.svg';
+import navIcon1 from '../assets/img/nav-icon1.svg';
+import navIcon2 from '../assets/img/nav-icon2.svg';
+import navIcon3 from '../assets/img/nav-icon3.svg';
 
 export const NavBar = () => {
     const [activeLink, setActiveLink] = useState('home');
     const [scrolled, setScrolled] = useState(false);
 
-    useEffect(() =>{
+    useEffect(() => {
       const onScroll = () => {
         if(window.scrollY > 50){
           setScrolled(true);
@@ -29,7 +27,7 @@ export const NavBar = () => {
       setActiveLink(value);
     }
     return (
-        <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
+        <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
           <Container>
             <Navbar.Brand href="#home">
                 <img src={logo} alt='Logo'/>
