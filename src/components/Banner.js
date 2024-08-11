@@ -5,9 +5,9 @@ import headerImg from "../assets/img/header-img.svg";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
-    contst [isDeleting, setIsDeleting] = useState(false);
+    const [isDeleting, setIsDeleting] = useState(false);
     const toRotate = ["Backend Developer", "Computer Engineer", "Programmer"];
-    conts [text, setText] = useState('');
+    const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
 
@@ -46,11 +46,11 @@ export const Banner = () => {
                 <Row className="align-items-center">
                     <Col xs={12} md={6} xl={7}>
                         <span className="tagline">Welcome to my Portfolio</span>
-                        <h1>{`Hi I'm Ali Marangoz`}<span className="wrap">Backend Developer</span></h1>
+                        <h1>{`Hi I'm Ali Marangoz `}<span className="wrap">{text}</span></h1>
                         <p>Lorem Ipsum is ABOUT ME simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of</p>
                         <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25} /> </button>
                     </Col>
-                    <Col xs={12} md={6} xl={7}>
+                    <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Headder Img" />
                     </Col>
                 </Row>
