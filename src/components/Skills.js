@@ -42,15 +42,15 @@ export const Skills = () => {
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
                                     <img src={meter1} alt="Image" />
-                                    <h5>Backend Development</h5>
+                                    <h5>Spring-Spring Boot Development</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter2} alt="Image" />
-                                    <h5>Server-Side Development</h5>
+                                    <h5>Hibernate Development</h5>
                                 </div>
                                 <div className="item">
                                     <img src={meter3} alt="Image" />
-                                    <h5>Database-Side Development</h5>
+                                    <h5>PL-SQL/MySQL/PostgreSQL Development</h5>
                                 </div>
                             </Carousel>
                         </div>

@@ -1,12 +1,12 @@
 import {useState, useEffect} from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
-import headerImg from "../assets/img/header-img.svg";
+import headerImg from "../assets/img/profile.png";
 
 export const Banner = () => {
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
-    const toRotate = ["Backend Developer", "Computer Engineer", "Programmer"];
+    const toRotate = ["Software Developer", "Backend Developer", "Computer Engineer"];
     const [text, setText] = useState('');
     const [delta, setDelta] = useState(300 - Math.random() * 100);
     const period = 2000;
@@ -28,7 +28,7 @@ export const Banner = () => {
         setText(updatedText);
 
         if (isDeleting){
-            setDelta(prevDelta => prevDelta / 2);
+            setDelta(prevDelta => prevDelta / 10);
         }
 
         if (!isDeleting && updatedText === fullText){
@@ -37,7 +37,7 @@ export const Banner = () => {
         } else if (isDeleting && updatedText === ''){
             setIsDeleting(false);
             setLoopNum(loopNum + 1);
-            setDelta(500);
+            setDelta(150);
         }
     }
     return (
