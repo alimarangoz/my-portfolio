@@ -4,6 +4,7 @@ import colorSharp2 from "../assets/img/color-sharp2.png";
 import expImg1 from "../assets/img/expImg1.png";
 import expImg2 from "../assets/img/expImg2.png";
 import expImg3 from "../assets/img/expImg3.png";
+import 'animate.css';
 
 export const Experiences = () => {
     const experiences = [
@@ -31,17 +32,17 @@ export const Experiences = () => {
     ];
 
     return (
-        <section className="experience" id="experience"> 
+        <section className="experience" id="experiences"> 
             <Container>
                 <Row>
                     <Col>
                         <h2>Experiences</h2>
                         <p>
-                            Lorem Ipsum section active value galley tablet random else align    
+                        These are the experiences I have gained from the time I stepped into the world of software in 2021 until today.   
                         </p>
                         <Tab.Container id="experiences-tabs" defaultActiveKey="first">         
                         <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
-                        <Nav.Item>
+                        {/* <Nav.Item>
                             <Nav.Link eventKey="first">Tab One</Nav.Link>
                         </Nav.Item>
                         <Nav.Item>
@@ -51,7 +52,7 @@ export const Experiences = () => {
                             <Nav.Link eventKey="third">
                             Tab Three
                             </Nav.Link>
-                        </Nav.Item>
+                        </Nav.Item> */}
                         </Nav>
                         <Tab.Content>
                             <Tab.Pane eventKey="first">
@@ -69,12 +70,12 @@ export const Experiences = () => {
                                 </Row>
                                 
                             </Tab.Pane>
-                            <Tab.Pane eventKey="second">
+{/*                             <Tab.Pane eventKey="second">
                                 Lorem ipsum bla bla bla
                             </Tab.Pane>
                             <Tab.Pane eventKey="third">
                                 Lorem ipsum bla bla
-                            </Tab.Pane>
+                            </Tab.Pane> */}
                         </Tab.Content>
                         </Tab.Container>
                     </Col>

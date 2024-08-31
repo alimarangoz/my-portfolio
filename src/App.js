@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Banner } from './components/Banner'
 import { Skills } from './components/Skills';
 import { Experiences } from './components/Experiences';
+import { Footer } from './components/Footer';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Banner />
       <Skills />
       <Experiences />
+      <Footer />
     </div>
   );
 }

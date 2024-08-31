@@ -1,9 +1,10 @@
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import meter1 from "../assets/img/meter1.svg"
-import meter2 from "../assets/img/meter2.svg"
-import meter3 from "../assets/img/meter3.svg"
+import skill1 from "../assets/img/skill1.svg"
+import skill2 from "../assets/img/skill2.svg"
+import skill3 from "../assets/img/skill3.svg"
+import skill4 from "../assets/img/skill4.svg"
 import colorSharp from "../assets/img/color-sharp.png"
 
 
@@ -30,7 +31,7 @@ export const Skills = () => {
       };
 
       return (
-        <section className="skill" id="Skills">
+        <section className="skill" id="skills">
             <Container>
                 <Row>
                     <Col>
@@ -38,18 +39,22 @@ export const Skills = () => {
                             <h2>
                                 Skills
                             </h2>
-                            <p>Lorem Ipsum period banner active default value banner naming max h1 tablet else when</p>
+                            <p>I'm a Backend Developer, so technologies that I'm using are around server side development.</p>
                             <Carousel responsive={responsive} infinite={true} className="skill-slider">
                                 <div className="item">
-                                    <img src={meter1} alt="Image" />
-                                    <h5>Spring-Spring Boot Development</h5>
+                                    <img src={skill1} alt="Image" />
+                                    <h5>Spring Development</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter2} alt="Image" />
+                                    <img src={skill4} alt="Image" />
+                                    <h5>Spring Boot Development</h5>
+                                </div>
+                                <div className="item">
+                                    <img src={skill2} alt="Image" />
                                     <h5>Hibernate Development</h5>
                                 </div>
                                 <div className="item">
-                                    <img src={meter3} alt="Image" />
+                                    <img src={skill3} alt="Image" />
                                     <h5>PL-SQL/MySQL/PostgreSQL Development</h5>
                                 </div>
                             </Carousel>
