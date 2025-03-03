@@ -24,7 +24,7 @@ export const Experiences = () => {
         },
         {
             firmName: "Yapı Kredi Teknoloji",
-            title: "Asistant Software Engineer",
+            title: "Software Engineer",
             description: "Backend Developer (Java, Spring, Spring Boot, PLSQL)",
             workingYears: "Apr 3 2023 - ",
             imgUrl: expImg3,

@@ -55,7 +55,7 @@ export const Skills = () => {
                                 </div>
                                 <div className="item">
                                     <img src={skill3} alt="Image" />
-                                    <h5>PL-SQL/MySQL/PostgreSQL Development</h5>
+                                    <h5>Oracle/MySQL/PostgreSQL Development</h5>
                                 </div>
                             </Carousel>
                         </div>
