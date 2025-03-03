@@ -11,9 +11,11 @@
 # production
 /build
 
-# src
-/src/assets
-/src/components
+#png
+/.*png
+
+# js
+/.*js
 
 # misc
 .DS_Store
