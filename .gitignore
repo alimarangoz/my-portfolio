@@ -12,7 +12,8 @@
 /build
 
 # src
-/src
+/src/assets
+/src/components
 
 # misc
 .DS_Store
