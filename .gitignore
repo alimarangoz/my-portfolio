@@ -11,11 +11,26 @@
 # production
 /build
 
-#png
-/.*png
+# assets
+/src/assets
+
+# css
+*.css
+
+# svg
+*.svg
+
+# png
+*.png
 
 # js
-/.*js
+*.js
+
+# pdf
+*.pdf
+
+# _redirects
+/_redirects
 
 # misc
 .DS_Store
